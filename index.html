@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <title>Responsive-layout</title>
 </head>
 <body>
@@ -14,18 +15,23 @@
     <div class="contents-menu container dflex between align-items">
       <div>logo</div>
       <div>
-        <nav class=" menu-header dflex align-items">
-          <ul >
-            <li>Planning</li>
-            <li>Testimonials</li>
-            <li>Features</li>
-            <li>About Us</li>
-            <li>
-              <button class="btn"></button>
-            </li>
-          </ul>
-
-        </nav>
+        <div class="menu-btn ">
+          <i class="fa-solid fa-bars"></i>
+          <nav class=" menu-header dflex align-items">
+         
+            <ul >
+              <li><a href="#">Planning</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">About Us</a></li>
+              <li>
+                <button class="btn"></button>
+              </li>
+            </ul>
+  
+          </nav>
+        </div>
+       
         
       </div>
     </div>
@@ -34,21 +40,37 @@
 
   <div class="sections">
     <div class="container">
+
       <!-- SECTIONS -->
     <div class="section dflex wrap between">
       <div class="col 1">
-        <div >
-          left
+        <div class="col-intern dflex  align-items column">
+          <div >
+            left
+          </div>
+          <div>
+            right
+          </div>
+
         </div>
-        <div>
-          right
+       
+      </div>
+      <div class="col ">
+        <div class="col-intern dflex   align-items column  ">
+          <div>2</div>
         </div>
       </div>
-      <div class="col 2">2</div>
-      <div class="col 3">3</div>
-      <div class="col 4">4</div>
-      <div class="col 5">5</div>
+      <div class="col ">
+        <div class="col-intern dflex between align-items column">3</div>
+      </div>
+      <div class="col ">
+        <div class="col-intern  dflex between align-items column">4</div>
+      </div>
+      <div class="col ">
+        <div class="col-intern  dflex between align-items column">5</div>
+      </div>
     </div>
+
     <div class="section purple">
       <div class="row">
         <div id="strate"><img src="" alt=""></div>
@@ -59,6 +81,7 @@
       </div>
       <div class="row"></div>
     </div>
+
     <div class="section "></div>
     <div class="section purple"></div>
     <div class="section "></div>
