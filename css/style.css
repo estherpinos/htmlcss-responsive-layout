@@ -1,0 +1,78 @@
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES */
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.dflex{
+  display: flex;
+}
+
+.between{
+  justify-content: space-between;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.align-items{
+  align-items: center;
+}
+
+:root{
+  --purple:#9792E4;
+  --blue-menu: #0084FD;
+}
+
+.btn{
+  padding: 10px 15px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+/* HEADER */
+#menu{
+  background-color: var(--blue-menu);
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.contents-menu{
+  height: 100%;
+  vertical-align: middle;
+}
+
+.menu-header{
+  height: 100%;
+}
+
+.menu-header li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px;
+}
+
+/* SECTIONS */
+.section{
+  padding: 30px 0;
+
+}
+
+.section .purple{
+  background-color: var(--purple);
+
+}
