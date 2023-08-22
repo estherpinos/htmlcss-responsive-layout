@@ -2,6 +2,7 @@
    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* UTILITIES */
@@ -132,7 +133,7 @@ header .row .menu{
 .planning .col{
   display: flex;
   justify-content: center;
-  
+
   
 }
 
@@ -141,6 +142,59 @@ header .row .menu{
 .planning .col img{
   width: 160px;
 }
+
+
+/* ABOUT US */
+
+.img-ln{
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.about h1{
+  color: var(--purple);
+  font-size: 40px;
+  width: 100%;
+  text-align: left;
+}
+
+.about .col:nth-child(2){
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .btn{
+  background-color: var(--purple);
+  color: white;
+}
+
+.about h2{
+  color: var(--purple);
+}
+
+.about .row{
+  padding: 30px;
+}
+
+.about .col:first-child{
+  width: 50%;
+ margin-right: 50px;
+ text-align: left;
+}
+
+.about .col:nth-child(2){
+  text-align: left;
+}
+
+.about img{
+  text-align: center;
+}
+
+
 
 .planning .strategic-planing .col{
   display: flex;
