@@ -7,134 +7,243 @@
 /* UTILITIES */
 
 .container {
-  max-width: 640px;
+  max-width: 1140px;
   margin: 0 auto;
 
 }
 
-.dflex{
-  display: flex;
-}
-
-.wrap{
-  flex-wrap: wrap;
-}
-
-.between{
-  justify-content: space-between;
-}
-
-.center{
-  justify-content: center;
-}
-
-.row{
-  flex-direction: row;
-}
-
-.column{
-  flex-direction: column;
-}
-
-.align-items{
-  align-items: center;
+.debug{
+  background-color: pink;
+  border: 1px solid black;
+  min-height: 50px;
 }
 
 :root{
-  --purples:#9792E4;
-  --blue-menu: #0084FD;
+  --purple:#9792E4;
+  --bluemenu:#0084FD;
+  --bluebox:#B5DDFF;
+}
+
+.row{
+  display: flex;
+}
+
+.col{
+  width: 100%;
 }
 
 .btn{
-  padding: 10px 15px;
-  background-color: red;
+  padding: 5px 10px;
   border-radius: 10px;
+  border: none;
 }
 
 /* HEADER */
 
+header .container{
+  background-color: var(--bluemenu);
+}
+
+
 header .row{
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+  padding: 10px 0;
 }
+
+
 
 header .row .menu{
   display: none;
 }
 
+.menu ul li{
+  list-style: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin:10px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+}
 
+.hamburger .fa-bars{
+  color: white;
+  
+}
 
 
 /* SECTIONS */
 
-.sections{
-  margin-top: 50px;
-}
-.section{
-  padding: 30px 0;
+/* INTRO */
+
+.intro .row{
+  flex-wrap: wrap;
 }
 
- .purple{
-  background-color: var(--purples);
-}
-
-.col{
-  border: 1px solid black; /* delete */
-  background-color: palevioletred;
-  text-align: center;
-  padding: 10px;
-}
-
-.col-intern{
-  height: 100%;
-  vertical-align: middle;
-  background-color: white;
+ .col-intern{
+  background-color: var(--bluebox);
+  margin: 10px;
   border-radius: 10px;
-
+  padding: 15px;
 }
 
-.row{
-  margin-bottom: 20px;
-}
-
-.row-white{
-  background-color: white;
-  border-radius: 15px;
-  padding: 10px;
-  width: 100%;
+.col-intern .row{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   
 }
 
-.row-purple{
-  background-color: var(--purples);
-  border-radius: 15px;
-  padding: 10px 5px;
-  margin-bottom: 20px;
+.row h1{
+  color: var(--bluemenu);
+  width: 20px;
+  text-align: center;
+  
 }
 
-.row-purple :first-child{
-  background-color: black;
-  border-radius:100%;
-  width: 70px;
-  height: 70px;
+.demo{
+  
+  width: 10%;
 }
 
-.
+ .col .img-demo{
+  
+  width: 50%;
+  
+}
+
+.img-demo img{
+  width: 80px;
+}
+
+
+/* PLANNING */
+
+.planning .col{
+  padding: 20px;
+}
+
+.planning .col{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+
+
+.planning .col img{
+  width: 160px;
+}
+
+.planning .strategic-planing .col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.strategic-planning{
+  max-width: 250px;
+}
+
+.col-white{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 250px;
+}
+
+.col-white img{
+  width: 0px;
+}
+
+
+.planning, .benefits, .started{
+  background-color: var(--purple);
+}
+
+
+
+.intro .col:first-child .row,
+.planning .row,
+.testimonials .row,
+.benefits .row,
+.about .row
+{
+  flex-direction: column;
+}
+
+.benefits .row{
+  flex-wrap: wrap;
+}
+
+
 
 
 
 
 /* RESPONSIVE */
 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px) {
 
   header .row .menu{
-    display: block;
+      display: block;
   }
 
-  header .row .hamburguer{
-    display: none;
+  header .row .hamburger{
+      display: none;
+  }
+
+  .intro .col{
+      width: calc(100% / 3);
+  }
+  
+  .intro .col:first-child{
+    width: 66.6666%;
+  }
+
+
+  .planning .row,
+  .benefits .row,
+  .about .row,
+  .testimonials .row{
+      flex-direction: row;
+  }
+
+  .testimonials .row .col:first-child{
+      width: 220px;
+  }
+
+  .benefits .col{
+      width: 50%;
+  }
+
+  .about .col:last-child{
+      width: 250px;
+  }
+
+}
+
+@media screen and (min-width:992px){
+  .intro .col:first-child .row{
+      flex-direction: row;
+  }
+  .benefits .col{
+      width: calc(100% / 3);
   }
 }
+
+
+  
+
+
 
 
 
