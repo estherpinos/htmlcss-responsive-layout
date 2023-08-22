@@ -52,37 +52,17 @@
 }
 
 /* HEADER */
-#menu{
-  background-color: var(--blue-menu);
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  margin-bottom: 50px;
+
+header .row{
+  justify-content: space-between;
 }
 
-.contents-menu{
-  height: 100%;
-  vertical-align: middle;
+header .row .menu{
+  display: none;
 }
 
-.menu-header{
-  height: 100%;
-}
 
-.menu-header li{
-  display: inline-block;
-  list-style: none;
-  margin: 0 10px;
- 
-}
 
-.menu-header a{
-  text-decoration: none;
-  color: white;
-}
 
 /* SECTIONS */
 
@@ -145,28 +125,19 @@
 
 /* RESPONSIVE */
 
-@media screen and (max-width:768px){
-  .menu-btn i{
-    display: none;
-  }
-  .menu-header{
+@media screen and (min-width:769px){
+
+  header .row .menu{
     display: block;
+  }
+
+  header .row .hamburguer{
+    display: none;
   }
 }
 
-@media  screen and (max-width:480px) {
 
-  .section .col{
-    width: 100%;
-    vertical-align: middle;
-  }
 
-  .menu-header{
-    display: none;
-  }
-
-  
-} 
 
 
   
